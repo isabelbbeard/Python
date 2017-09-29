@@ -1,0 +1,30 @@
+--- 
+#title: "Machine Learning"
+#author: "Isabel Beard"
+#date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "Basic guide to python"
+---
+
+# Python
+Python is a versatile language that can be used for data analysis, data cleaning, web scraping and data visualization (and much more). It is easy to read (in comparison to some other languages) and a great language for beginners to learn and master. It also has tons of open source code libraries and lots of support online (chances are if you have an issue, someone else will have already had that issue) via [Stack Overflow](https://stackoverflow.com/questions/tagged/python).
+
+
+##Getting started
+###Via: Anaconda (recommended)
+Anaconda conveniently installs Python, the Jupyter Notebook, and other commonly used packages for scientific computing and data science
+
+1.  Download [Anaconda](https://www.anaconda.com/download/) which automatically downloads Python for you (Select the Python 3.6 or most up-to-date version. Python 2 has slightly different syntax). 
+    + I usually use Anaconda to access jupyter-notebooks so rarely have to even open Anaconda once it’s on my machine. 
+2.  Follow with correct installation
+3.  To open jupyter notebook - I usually hit `cmd+space` on my Mac and type in ‘jupyter-notebook’
+
+###Via: pip
+
+1.  If you don't want to download anaconda you can follow the alternative route [here](http://jupyter.readthedocs.io/en/latest/install.html).

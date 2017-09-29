@@ -1,0 +1,29 @@
+# Learning resources
+
+##Basics
+
+- [Learn Python](https://www.codecademy.com/learn/learn-python)
+    - Via: Codecademy
+    - This is a great way to get familiar with python syntax (although feels less relevant in a data-analysis/visualization sphere) but is how I learned the basics of python.
+    - It is also done in the built-in environment so you don’t even have to download python to use.
+- [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
+    - Via: DataCamp
+    - Focuses more specifically on Python for data science but still covers a lot of the basics and introduces some functions and packages.
+- [Various videos](https://www.lynda.com/Python-training-tutorials/415-0.html?utm_source=google&utm_medium=cpc&utm_campaign=l1-US-Search-Dev-Python&cid=l1-us:en:ps:lp:prosc:s50:415:all:google:xct-learn_python&utm_content=109364651346&utm_term=learn%20python&src=go-pa&veh=skwd-1025138201_pcrid_109364651346_pkw_learn%20python_pmt_e_pdv_c_ext__plc__trg__agid_15832137666_cmid_85463466_adp_1t4_net_g&lpk35=9137)
+    - Via: Lynda
+    - Have yet to explore these thoroughly, but there are many subject-specific videos for python (and varying levels of experience).
+- [Automate the boring stuff](http://automatetheboringstuff.com/)
+    - Learn how to use Python to write programs that do in minutes what would take you hours by hand.
+    - Not interactive but very useful for learning some basics and then some more specific concepts like web-scraping and working with csv files.
+- [Tutorials](https://www.digitalocean.com/community/tutorials)
+    - Via: Digital Ocean
+    - Collection of user-made tutorials for various languages
+    
+
+##Further learning
+
+- [Titanic Machine Learning from Disaster](http://nbviewer.jupyter.org/github/agconti/kaggle-titanic/blob/master/Titanic.ipynb)
+    - More advanced python use - but really well done example of what can be done with python and how to organize and explain your process using jupyter-notebooks.
+- [Jupyter chorogrid tutorial](http://nbviewer.jupyter.org/github/Prooffreader/chorogrid/blob/master/tutorial_1_Colorbin.ipynb)
+    - Collection of tutorials to create various maps using the Colorbin library.
+

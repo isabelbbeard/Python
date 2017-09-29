@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="Basic guide to python">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Basic guide to python" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="" />
+  
+  <meta name="twitter:description" content="Basic guide to python" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="learning-resources.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Machine Learning Notes</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Python</a></li>
+<li class="chapter" data-level="2" data-path="libraries.html"><a href="libraries.html"><i class="fa fa-check"></i><b>2</b> Libraries</a><ul>
+<li class="chapter" data-level="2.1" data-path="libraries.html"><a href="libraries.html#installing-libraries"><i class="fa fa-check"></i><b>2.1</b> Installing libraries</a></li>
+<li class="chapter" data-level="2.2" data-path="libraries.html"><a href="libraries.html#useful-libraries"><i class="fa fa-check"></i><b>2.2</b> Useful libraries</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="learning-resources.html"><a href="learning-resources.html"><i class="fa fa-check"></i><b>3</b> Learning resources</a></li>
+<li class="chapter" data-level="4" data-path="placeholder.html"><a href="placeholder.html"><i class="fa fa-check"></i><b>4</b> Placeholder</a><ul>
+<li class="chapter" data-level="4.1" data-path="placeholder.html"><a href="placeholder.html#r-markdown"><i class="fa fa-check"></i><b>4.1</b> R Markdown</a></li>
+<li class="chapter" data-level="4.2" data-path="placeholder.html"><a href="placeholder.html#including-plots"><i class="fa fa-check"></i><b>4.2</b> Including Plots</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="libraries" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Libraries</h1>
+<div id="installing-libraries" class="section level2">
+<h2><span class="header-section-number">2.1</span> Installing libraries</h2>
+<p>Before you can import libraries to use in python - you need to install them. If you get an error when you use <code>‘import [library name here]’</code>, chances are, you haven’t installed the library yet.</p>
+<ul>
+<li>First you need to <a href="https://pip.pypa.io/en/stable/installing/">download pip</a> (to then be able to install packages)</li>
+<li>You can then use pip + your command line to install the required library.
+<ul>
+<li><code>pip install [library name]</code></li>
+</ul></li>
+</ul>
+</div>
+<div id="useful-libraries" class="section level2">
+<h2><span class="header-section-number">2.2</span> Useful libraries</h2>
+<ul>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"><strong>BeautifulSoup</strong></a>
+<ul>
+<li>Category: web scraping</li>
+<li>A python library for pulling data out of HTML and XML files</li>
+<li>You can use your html tagging knowledge to pinpoint specific elements to extract</li>
+</ul></li>
+<li><a href="http://selenium-python.readthedocs.io/installation.html#introduction"><strong>Selenium</strong></a>
+<ul>
+<li>Category: web scraping, automaticing browser interaction</li>
+<li>First you need to download webdriver for <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads">chrome</a> (or browser)</li>
+<li>The selenium package is used to automate web browser interaction from Python.</li>
+<li>In this case, because of twitter’s infinite scroll - we can only get what’s at the top of the page. Using selenium allows us to automate the scrolling while still grabbing the elements we need.</li>
+<li><a href="http://www.marinamele.com/selenium-tutorial-web-scraping-with-selenium-and-python">Web scraping tutorial with Selenium and Python</a></li>
+</ul></li>
+<li><a href="https://docs.python.org/2/library/time.html"><strong>Time</strong></a>
+<ul>
+<li>A module that provides various time-related functions. In this case we are using time with selenium to scroll the page after a certain amount of time.</li>
+</ul></li>
+<li><a href="https://docs.python.org/2/library/csv.html"><strong>csv</strong></a>
+<ul>
+<li>Implements classes to read and write tabular data in a CSV format</li>
+</ul></li>
+<li><a href="http://docs.tweepy.org/en/v3.5.0/"><strong>Tweepy</strong></a>
+<ul>
+<li>An easy-to-use Python library for accessing the Twitter API</li>
+<li>Need to go through the <a href="http://docs.tweepy.org/en/v3.5.0/auth_tutorial.html#auth-tutorial">authentication process</a> to get various keys in order to access the twitter API</li>
+<li>The only downside is that the twitter API only allows 15 requests per window per access token.</li>
+<li>You can also only get tweets from the past week (and no earlier)</li>
+</ul></li>
+<li><a href="https://scrapy.org/"><strong>Scrapy</strong></a>
+<ul>
+<li>An open source and collaborative framework for extracting the data you need from websites.</li>
+<li>Easy to setup and use, great documentation and built-in support for exporting to CSV, JSON and XML</li>
+</ul></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="learning-resources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-Libraries.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

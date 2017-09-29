@@ -1,0 +1,35 @@
+# Libraries
+
+## Installing libraries
+Before you can import libraries to use in python - you need to install them. If you get an error when you use `‘import [library name here]’`, chances are, you haven’t installed the library yet. 
+
+- First you need to [download pip](https://pip.pypa.io/en/stable/installing/) (to then be able to install packages)
+- You can then use pip + your command line to install the required library.
+    - `pip install [library name]`
+
+## Useful libraries
+
+- [**BeautifulSoup**](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+    - Category: web scraping
+    - A python library for pulling data out of HTML and XML files
+    - You can use your html tagging knowledge to pinpoint specific elements to extract
+- [**Selenium**](http://selenium-python.readthedocs.io/installation.html#introduction)
+    - Category: web scraping, automaticing browser interaction
+    - First you need to download webdriver for [chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads) (or browser)
+    - The selenium package is used to automate web browser interaction from Python.
+    - In this case, because of twitter's infinite scroll - we can only get what's at the top of the page. Using selenium allows us to automate the scrolling while still grabbing the elements we need.
+    - [Web scraping tutorial with Selenium and Python](http://www.marinamele.com/selenium-tutorial-web-scraping-with-selenium-and-python)
+- [**Time**](https://docs.python.org/2/library/time.html)
+    - A module that provides various time-related functions. In this case we are using time with selenium to scroll the page after a certain amount of time. 
+- [**csv**](https://docs.python.org/2/library/csv.html)
+    - Implements classes to read and write tabular data in a CSV format
+- [**Tweepy**](http://docs.tweepy.org/en/v3.5.0/)
+    - An easy-to-use Python library for accessing the Twitter API
+    - Need to go through the [authentication process](http://docs.tweepy.org/en/v3.5.0/auth_tutorial.html#auth-tutorial) to get various keys in order to access the twitter API
+    - The only downside is that the twitter API only allows 15 requests per window per access token.
+    - You can also only get tweets from the past week (and no earlier)
+- [**Scrapy**](https://scrapy.org/)
+    - An open source and collaborative framework for extracting the data you need from websites.
+    - Easy to setup and use, great documentation and built-in support for exporting to CSV, JSON and XML
+
+

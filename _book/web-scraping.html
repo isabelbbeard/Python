@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="Basic guide to python">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Basic guide to python" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="" />
+  
+  <meta name="twitter:description" content="Basic guide to python" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="learning-resources.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Machine Learning Notes</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Python</a></li>
+<li class="chapter" data-level="2" data-path="libraries.html"><a href="libraries.html"><i class="fa fa-check"></i><b>2</b> Libraries</a><ul>
+<li class="chapter" data-level="2.1" data-path="libraries.html"><a href="libraries.html#installing-libraries"><i class="fa fa-check"></i><b>2.1</b> Installing libraries</a></li>
+<li class="chapter" data-level="2.2" data-path="libraries.html"><a href="libraries.html#useful-libraries"><i class="fa fa-check"></i><b>2.2</b> Useful libraries</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="learning-resources.html"><a href="learning-resources.html"><i class="fa fa-check"></i><b>3</b> Learning resources</a></li>
+<li class="chapter" data-level="4" data-path="web-scraping.html"><a href="web-scraping.html"><i class="fa fa-check"></i><b>4</b> Web scraping</a><ul>
+<li class="chapter" data-level="4.1" data-path="web-scraping.html"><a href="web-scraping.html#resources"><i class="fa fa-check"></i><b>4.1</b> Resources</a></li>
+<li class="chapter" data-level="4.2" data-path="web-scraping.html"><a href="web-scraping.html#twitter-scrape-using-beautiful-soup"><i class="fa fa-check"></i><b>4.2</b> Twitter Scrape (using Beautiful SOUP)</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="web-scraping" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Web scraping</h1>
+<p>There are several ways to extract information from the web. Use of APIs being probably the best way to extract data from a website. Almost all large websites like Twitter, Facebook, Google, Twitter, StackOverflow provide APIs to access their data in a more structured manner. <strong>If you can get what you need through an API, it is almost always preferred approach over web scraping.</strong><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<div id="resources" class="section level2">
+<h2><span class="header-section-number">4.1</span> Resources</h2>
+<ul>
+<li><a href="https://www.analyticsvidhya.com/blog/2015/10/beginner-guide-web-scraping-beautiful-soup-python/">Beginners guide to web scraping</a>
+<ul>
+<li>This is a great place to start with web-scraping</li>
+<li>Introduces BeautifulSoup and how to read HTML tags</li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=XQgXKtPSzUI">Introduction To Web Scraping</a>
+<ul>
+<li>Via: youtube</li>
+<li>Another really useful tutorial (and also helps that it’s on youtube)</li>
+</ul></li>
+<li><a href="https://www.codecademy.com/en/tracks/twitter">Twitter API</a>
+<ul>
+<li>Via: Codecademy</li>
+</ul></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-crawl-a-web-page-with-scrapy-and-python-3">How to crawl a web page with scrapy and python 3</a>
+<ul>
+<li>Via: Digital Ocean</li>
+<li>Good place to start and has an example that you can follow all the way through</li>
+</ul></li>
+<li><a href="https://learn.scrapinghub.com/scrapy/">Learn Scrapy</a>
+<ul>
+<li>Video series for learning scrapy</li>
+</ul></li>
+</ul>
+</div>
+<div id="twitter-scrape-using-beautiful-soup" class="section level2">
+<h2><span class="header-section-number">4.2</span> Twitter Scrape (using Beautiful SOUP)</h2>
+<p><strong>Libraries needed</strong></p>
+<ul>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">BeautifulSoup</a>: This well help us parse a web page</li>
+<li><a href="http://selenium-python.readthedocs.io/installation.html#introduction">Selenium</a>: The selenium.webdriver module provides all the WebDriver implementations. Currently supported WebDriver implementations are Firefox, Chrome, IE and Remote. The Keys class provide keys in the keyboard like RETURN, F1, ALT etc.</li>
+<li><a href="https://docs.python.org/2/library/time.html">Time</a>: Time used to pause scrolling for x number of seconds before continuing</li>
+<li><a href="https://docs.python.org/2/library/csv.html">csv</a>: Used to write all the data we collect into a .csv file</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup
+<span class="im">from</span> selenium <span class="im">import</span> webdriver
+<span class="im">from</span> selenium.webdriver.common.keys <span class="im">import</span> Keys
+<span class="im">import</span> time
+<span class="im">import</span> csv</code></pre></div>
+<p><strong>Set up the url and filename</strong></p>
+<p>Here we will create our url. In order to make the scraper more flexible, we split it up so we can use it to scrape other search results with a different hashtag. In this case we are scraping all tweets with the <code>#Goalkeepers17</code> hashtag. We also want to set up the name of the .csv file we are going to create at the end so we remember to change it as we change our scraper (don’t want to save over existing files).</p>
+<p><code>hashtag = &quot;Goalkeepers17&quot;</code> is where we can change the hashtag to retrieve a different search result</p>
+<p><code>filename = &quot;twitterscrape.csv&quot;</code> is where we name our file that we want to export our scraped data.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">#Set up google search URL</span>
+<span class="co">#States our webdriver as using Chrome (obviously if you don&#39;t use chrome you would need to change this)</span>
+browser <span class="op">=</span> webdriver.Chrome()
+
+<span class="co">#Here we broke up the url so we could insert our own hashtag to search easily</span>
+start_url <span class="op">=</span> <span class="st">&quot;https://twitter.com/hashtag/&quot;</span>
+hashtag <span class="op">=</span> <span class="st">&quot;Goalkeepers17&quot;</span> <span class="co">#&lt;&lt;&lt;&lt;This can be changed</span>
+end_url <span class="op">=</span> <span class="st">&quot;?src=hash&quot;</span>
+<span class="co">#combine each element of the url to create a final url</span>
+url <span class="op">=</span> start_url <span class="op">+</span> hashtag <span class="op">+</span> end_url
+<span class="co">#print(url) #can test the url using print</span>
+
+<span class="co">#File to write csv </span>
+filename <span class="op">=</span> <span class="st">&quot;twitterscrape.csv&quot;</span></code></pre></div>
+<p>When you run this code block you should get a pop-up of the browser that we will be controlling with selenium.</p>
+<div class="figure">
+<img src="_bookdown_files/Images/Web-scraping-1.png" alt="Result when you run above code" />
+<p class="caption">Result when you run above code</p>
+</div>
+<p><strong>Set up selenium</strong></p>
+<p>Here we definte a function that opens our url, and scrolls down the twitter page, using <code>time.sleep(2)</code> to pause 2 seconds after every scroll to load the page. (Honestly still need to figure out what exactly is going on here). Code from <a href="https://github.com/rjshanahan/twitter_scraper/blob/master/twitter_selenium_scraper.py">here</a>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> twt_scroller(url):
+    browser.get(url)
+    <span class="co">#define initial page height for &#39;while&#39; loop</span>
+    lastHeight <span class="op">=</span> browser.execute_script(<span class="st">&quot;return document.body.scrollHeight&quot;</span>)
+    <span class="cf">while</span> <span class="va">True</span>:
+        browser.execute_script(<span class="st">&quot;window.scrollTo(0, document.body.scrollHeight);&quot;</span>)
+        <span class="co">#define how many seconds to wait while dynamic page content loads</span>
+        time.sleep(<span class="dv">2</span>)
+        newHeight <span class="op">=</span> browser.execute_script(<span class="st">&quot;return document.body.scrollHeight&quot;</span>)
+        <span class="cf">if</span> newHeight <span class="op">==</span> lastHeight:
+            <span class="cf">break</span>
+        <span class="cf">else</span>:
+            lastHeight <span class="op">=</span> newHeight
+    html <span class="op">=</span> browser.page_source
+    <span class="cf">return</span> html</code></pre></div>
+<p><strong>Create the soup</strong></p>
+<p>We create the soup by first running the function from above on our url and then implementing the BeatifulSoup function on the full page.</p>
+<p>We can then inspect the HTML to pinpoint the container and class that contains all the information we need.</p>
+<div class="figure">
+<img src="_bookdown_files/Images/Web-scraping-2.png" alt="Inspect element" />
+<p class="caption">Inspect element</p>
+</div>
+<p>You can see in the image above that when you inspect the element <code>right click + inspect element</code>, you can get the container that contains all the information you will need. Here we can see that is a <code>div</code> with the <code>class tweet</code> (You can use the element selector to highlight the element which will display the html as a tool-tip and in the right-hand Elements bar. . Once we use <code>BeautifulSoup()</code> to parse our html, we use our inspected information to create a container that will find all the <code>div</code> containers with the <code>class tweet</code> in our url.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">#create the soup</span>
+soup <span class="op">=</span> BeautifulSoup(twt_scroller(url), <span class="st">&quot;html.parser&quot;</span>)
+
+<span class="co">#grabs the whole tweet container</span>
+containers <span class="op">=</span> soup.findAll(<span class="st">&quot;div&quot;</span>, {<span class="st">&quot;class&quot;</span>:<span class="st">&quot;tweet&quot;</span>})</code></pre></div>
+<p><strong>Grab all the information we need</strong></p>
+<p>Here we have to go back and forth between the HTML and python to grab the various elements we want. In this case we wanted:</p>
+<ul>
+<li>Name</li>
+<li>Username</li>
+<li>Verified (yes/no)</li>
+<li>Date</li>
+<li>Tweet text</li>
+<li><code>#</code> of replies</li>
+<li><code>#</code> of retweets</li>
+<li><code>#</code> of likes</li>
+</ul>
+<p>We loop through all the containers we collected in the soup - and for each container we want to grab the above HTML elements (The for loop we’ve used at the beginning only iterates through a few elements at a time so we don’t waste time if some of the elements we grab are incorrect). We can grap and element with the following code:</p>
+<pre><code>VARIABLE = container.find(&quot;BLOCK ELEMENT&quot;, attrs={&quot;ATTRIBUTE&quot;: &quot;ATTRIBUTE NAME&quot;}).get_text()</code></pre>
+<p>Fore example, to get the twitter username we can do:</p>
+<pre><code>username = container.find(&quot;span&quot;, attrs={&quot;class&quot;: &quot;username&quot;}).get_text()</code></pre>
+<p>Below we’ve added a statement on the end of each block element to just have a blank if the there is no element there to grab.</p>
+<p>We also had to do a little bit of cleaning in here. For example the names were grabbed and if they were verified it was tacked on to the end of the name. We created a little statement where if the name had ‘Verified account’ in it, we put a one in a new category called verified (else we put a 0).Some of the text (like number of replies and retweets) also had the text ‘replies’ and ‘retweets’ so we wanted to drop that.</p>
+<p>We then saved all the information into a dictionary. We’ve printed statements at each stage just to double-check the information we get is right.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">#checks we have a container</span>
+<span class="co">#print(containers[0])</span>
+<span class="co">#create some lists that we will populate further down</span>
+verified <span class="op">=</span> []
+name <span class="op">=</span> []
+twitter_list <span class="op">=</span> []
+
+<span class="co">#for container in containers[0:2] #&lt;&lt;&lt;&lt;Use this statement to just iterate through the first 3 containers so as not to waste time</span>
+<span class="cf">for</span> container <span class="kw">in</span> containers:
+    fullname <span class="op">=</span> container.find(<span class="st">&quot;span&quot;</span>, attrs<span class="op">=</span>{<span class="st">&quot;class&quot;</span>:<span class="st">&quot;FullNameGroup&quot;</span>}).get_text() <span class="cf">if</span> container.find(<span class="st">&#39;span&#39;</span>, {<span class="st">&#39;class&#39;</span>:<span class="st">&quot;FullNameGroup&quot;</span>}) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="cf">else</span> <span class="st">&quot;&quot;</span>
+    <span class="co">#print(&quot;fullname:&quot;, fullname)</span>
+    <span class="cf">if</span> <span class="st">&quot;Verified account&quot;</span> <span class="kw">in</span> fullname:
+        verified <span class="op">=</span> <span class="dv">1</span>
+        name <span class="op">=</span> fullname.replace(<span class="st">&quot;Verified account&quot;</span>, <span class="st">&quot;&quot;</span>)
+    <span class="cf">else</span>:
+         verified <span class="op">=</span> <span class="dv">0</span>   
+    <span class="co">#print(&quot;name:&quot;, name)</span>
+    <span class="co">#print(&quot;verified:&quot;, verified)    </span>
+    
+    username <span class="op">=</span> container.find(<span class="st">&quot;span&quot;</span>, attrs<span class="op">=</span>{<span class="st">&quot;class&quot;</span>: <span class="st">&quot;username&quot;</span>}).get_text() <span class="cf">if</span> container.find(<span class="st">&quot;span&quot;</span>, attrs<span class="op">=</span>{<span class="st">&quot;class&quot;</span>: <span class="st">&quot;username&quot;</span>}) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="cf">else</span> <span class="st">&quot;&quot;</span>
+    <span class="co">#print(&quot;username:&quot;, username)</span>
+    date <span class="op">=</span> container.find(<span class="st">&quot;a&quot;</span>, attrs <span class="op">=</span> {<span class="st">&quot;class&quot;</span>: <span class="st">&quot;tweet-timestamp&quot;</span>}).get_text() <span class="cf">if</span> container.find(<span class="st">&quot;a&quot;</span>, attrs <span class="op">=</span> {<span class="st">&quot;class&quot;</span>: <span class="st">&quot;tweet-timestamp&quot;</span>}) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="cf">else</span> <span class="st">&quot;&quot;</span>
+    <span class="co">#print(&quot;date:&quot;, date)</span>
+    tweet <span class="op">=</span> container.find(<span class="st">&quot;p&quot;</span>, attrs <span class="op">=</span> {<span class="st">&quot;class&quot;</span>: <span class="st">&quot;TweetTextSize&quot;</span>}).text.strip() <span class="cf">if</span> container.find(<span class="st">&quot;p&quot;</span>, attrs <span class="op">=</span> {<span class="st">&quot;class&quot;</span>: <span class="st">&quot;TweetTextSize&quot;</span>}) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="cf">else</span> <span class="st">&quot;&quot;</span>
+    <span class="co">#print(&quot;tweet:&quot;, tweet)</span>
+    replies <span class="op">=</span> container.find(<span class="st">&#39;span&#39;</span>,{<span class="st">&quot;class&quot;</span>:<span class="st">&quot;ProfileTweet-actionCount&quot;</span>}).text.strip().replace(<span class="st">&quot; replies .&quot;</span>, <span class="st">&quot;&quot;</span>).replace(<span class="st">&quot; reply .&quot;</span>, <span class="st">&quot;&quot;</span>) <span class="cf">if</span> container.find(<span class="st">&#39;span&#39;</span>,{<span class="st">&quot;class&quot;</span>:<span class="st">&quot;ProfileTweet-actionCount&quot;</span>}) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="cf">else</span> <span class="st">&quot;&quot;</span>
+    <span class="co">#print(&quot;replies:&quot;, replies)</span>
+    retweets <span class="op">=</span> container.find(<span class="st">&#39;span&#39;</span>,{<span class="st">&quot;class&quot;</span>:<span class="st">&quot;ProfileTweet-action--retweet&quot;</span>}).text.strip().replace(<span class="st">&quot; retweets&quot;</span>, <span class="st">&quot;&quot;</span>).replace(<span class="st">&quot; retweet&quot;</span>, <span class="st">&quot;&quot;</span>) <span class="cf">if</span> container.find(<span class="st">&#39;span&#39;</span>,{<span class="st">&quot;class&quot;</span>:<span class="st">&quot;ProfileTweet-action--retweet&quot;</span>}) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="cf">else</span> <span class="st">&quot;&quot;</span>
+    <span class="co">#print(&quot;retweets:&quot;, retweets)</span>
+    likes <span class="op">=</span> container.find(<span class="st">&quot;span&quot;</span>, {<span class="st">&quot;class&quot;</span>: <span class="st">&quot;ProfileTweet-action--favorite&quot;</span>}).text.strip().replace(<span class="st">&quot; likes&quot;</span>, <span class="st">&quot;&quot;</span>).replace(<span class="st">&quot; like&quot;</span>, <span class="st">&quot;&quot;</span>) <span class="cf">if</span> container.find(<span class="st">&quot;span&quot;</span>, {<span class="st">&quot;class&quot;</span>: <span class="st">&quot;ProfileTweet-action--favorite&quot;</span>}) <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="cf">else</span> <span class="st">&quot;&quot;</span>
+    <span class="co">#print(&quot;likes:&quot;, likes)</span>
+    
+    <span class="co">#write tweets to a dictionary</span>
+    twitter_dict <span class="op">=</span> {
+        <span class="st">&quot;name&quot;</span>: name.replace(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>, <span class="st">&quot;&quot;</span>).replace(<span class="st">&quot;</span><span class="ch">\u200f\xa0</span><span class="st">&quot;</span>, <span class="st">&quot;&quot;</span>), 
+        <span class="co">&quot;verified&quot;</span>: verified,
+        <span class="co">&quot;username&quot;</span>: username,
+        <span class="co">&quot;date&quot;</span>: date,
+        <span class="co">&quot;tweet&quot;</span>: tweet,
+        <span class="co">&quot;replies&quot;</span>: replies,
+        <span class="co">&quot;retweets&quot;</span>: retweets,
+        <span class="co">&quot;likes&quot;</span>: likes
+    }
+    
+    twitter_list.append(twitter_dict)
+
+<span class="co">#Test to see if everything has worked correctly</span>
+<span class="bu">print</span>(twitter_list[<span class="dv">0</span>:<span class="dv">2</span>])</code></pre></div>
+<p>Should end up with a dictionary that looks something like this:</p>
+<pre><code>[{&#39;date&#39;: &#39;Sep 20&#39;,
+  &#39;likes&#39;: &#39;260&#39;,
+  &#39;name&#39;: &#39;Max de Haldevang&#39;,
+  &#39;replies&#39;: &#39;3&#39;,
+  &#39;retweets&#39;: &#39;90&#39;,
+  &#39;tweet&#39;: &#39;Obama: If asked what period of history you\&#39;d want to live in, &quot;this would be the time you wanna be showing up on this planet&quot;#Goalkeepers17&#39;,
+  &#39;username&#39;: &#39;@MddeH&#39;,
+  &#39;verified&#39;: 1},
+ {&#39;date&#39;: &#39;Sep 20&#39;,
+  &#39;likes&#39;: &#39;2,853&#39;,
+  &#39;name&#39;: &#39;The Obama Foundation&#39;,
+  &#39;replies&#39;: &#39;47&#39;,
+  &#39;retweets&#39;: &#39;1,018&#39;,
+  &#39;tweet&#39;: &#39;&quot;Progress requires struggle, and perseverance, and discipline, and faith.&quot; — @BarackObama at #Goalkeepers17&#39;,
+  &#39;username&#39;: &#39;@ObamaFoundation&#39;,
+  &#39;verified&#39;: 1}]</code></pre>
+<p>*<strong>Define function to write a csv file</strong></p>
+<p>Here we use the filename we defined earlier to write our twitter_list to a csv file. Have to specify which elemtns we want in each row.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co">#define function to write CSV file</span>
+<span class="kw">def</span> writer_csv(twitter_list):
+    <span class="cf">with</span> <span class="bu">open</span>(filename, <span class="st">&quot;w&quot;</span>, encoding<span class="op">=</span><span class="st">&quot;utf8&quot;</span>) <span class="im">as</span> csvfile:
+        writer <span class="op">=</span> csv.writer(csvfile, lineterminator<span class="op">=</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>, delimiter <span class="op">=</span> <span class="st">&quot;,&quot;</span>, quotechar<span class="op">=</span> <span class="st">&#39;&quot;&#39;</span>)
+        <span class="cf">for</span> i <span class="kw">in</span> twitter_list:
+            <span class="cf">if</span> <span class="bu">len</span>(i[<span class="st">&quot;tweet&quot;</span>]) <span class="op">&gt;</span> <span class="dv">0</span>:
+                newrow <span class="op">=</span> i[<span class="st">&quot;name&quot;</span>], i[<span class="st">&quot;verified&quot;</span>], i[<span class="st">&quot;username&quot;</span>], i[<span class="st">&quot;date&quot;</span>], i[<span class="st">&quot;tweet&quot;</span>], i[<span class="st">&quot;replies&quot;</span>], i[<span class="st">&quot;retweets&quot;</span>], i[<span class="st">&quot;likes&quot;</span>]
+                writer.writerow(newrow)
+            <span class="cf">else</span>:
+                <span class="cf">pass</span></code></pre></div>
+<p>And then we call the function that we defined above.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">writer_csv(twitter_list)</code></pre></div>
+<p>Our result should be a .csv file in the folder we are working in, that has all the information we need. I’ve had issues opening the .csv file with microsoft excel (There are a ton of strange characters) but it seems to work smoothly when just opened with google docs instead.</p>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Sometimes API’s have a cap on what you can scrape. For example, the Twitter API only lets you go back one week.<a href="web-scraping.html#fnref1">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="learning-resources.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-Web-scraping.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
